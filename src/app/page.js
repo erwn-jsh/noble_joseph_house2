@@ -1,95 +1,114 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+'use client';
+import { useEffect, useRef } from 'react';
+import styles from './page.module.css';
+import Image from 'next/image';
+import { Link } from 'next-view-transitions';
 
 export default function Home() {
+  const videoEl1 = useRef(null);
+
+  const attemptPlay = (videoEl) => {
+    videoEl &&
+      videoEl.current &&
+      videoEl.current.play().catch((error) => {
+        console.error('Error attempting to play', error);
+      });
+  };
+
+  useEffect(() => {
+    attemptPlay(videoEl1);
+  }, []);
+
   return (
     <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+      {/* <div className={styles.landing}>
+        <div className={styles.landing_content_wrapper}>
+          <video
+            playsInline
+            loop
+            muted
+            alt="All the devices"
+            src="/Landing_Placeholder.mp4"
+            ref={videoEl1}
+          />
+          <div className={styles.landing_content}>
+            <div className={styles.landing_logo}>
+              <Image src="/Saints/Joseph_White.png" width={500} height={500} />
+              <p>Give me the Stranger</p>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+      </div> */}
+
+      <div className={styles.landingv2}>
+        <div className={styles.bannerv2}>
+          <h1 className={styles.banner__contentv2}>
+            Orthodox Mission in the Heart of Toronto
+          </h1>
+        </div>
+        <div className={styles.landing_content_wrapperv2}>
+          <video
+            // playsInline
+            // loop
+            // muted
+            alt="All the devices"
+            src="/Landing_Placeholder.mp4"
+            ref={videoEl1}
           />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+          <div className={styles.landing_contentv2}>
+            <p>We Teach, We Heal, We Bring the Light of Christ to All</p>
+            <div className={styles.landing_donatev2}>
+              <Link href="/donate">Donate</Link>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.about}>
+        <Image
+          className={styles.about_logo}
+          src="/Saints/Joseph_Red.png"
+          width={350}
+          height={350}
+        />
+        <div className={styles.about_text}>
+          <h2>About</h2>
+          <p>
+            Like the first churches of early Christianity, which welcomed and
+            served their communities with open arms, we offer 'hospitality'
+            regularly to the Regent Park community every Monday.
+          </p>
+          <p>
+            We invite all to <span>"taste and see"</span> the warmth and love
+            of community, where everyone is welcome to join in. Our gatherings
+            are a time to relax, unwind, and connect with others over cards,
+            conversation, and music - someone often plays the piano to set the
+            tone. We also take time to celebrate birthdays and anniversaries,
+            making sure everyone feels seen and valued. Whether you're a
+            long-time resident or just passing through, our Monday gatherings
+            are a great way to catch up with friends, make new ones, and feel a
+            sense of belonging in the community.
+          </p>
+        </div>
+      </div>
+      <div className={styles.activities}>
+        <h1>Activities</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+          aperiam, quasi doloribus quo dolorum distinctio ratione saepe quis
+          earum quidem nam illum exercitationem dolores aspernatur odio
+          obcaecati asperiores rerum error?
+        </p>
+      </div>
+      <div className={styles.callToAction}>
+        <h1>Want to Get Involved?</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti vel
+          pariatur est natus numquam deserunt sed mollitia, dolore ad
+          voluptatem. Quo nobis non ad, debitis reiciendis adipisci ducimus iure
+          officiis.
+        </p>
+      </div>
     </div>
   );
 }

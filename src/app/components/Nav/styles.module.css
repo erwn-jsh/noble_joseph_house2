@@ -1,0 +1,40 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 80px;
+  padding: 2.5rem 8% 2.5rem 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--rouge);
+  font-family: var(--font-playfair);
+  color: var(--white);
+  z-index: 500;
+}
+
+.index {
+  font-size: 2.2rem;
+}
+
+.links {
+  font-family: var(--font-manrope);
+  /* font-weight: 500; */
+  color: var(--clean-white);
+  display: flex;
+  gap: 2rem;
+  font-size: 1.7rem;
+  align-items: center;
+}
+
+.donate {
+  border: solid var(--clean-white);
+  padding: 0.5rem;
+  color: var(--clean-white);
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+}
