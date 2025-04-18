@@ -1,0 +1,48 @@
+import { useRef, useEffect } from 'react';
+import styles from './styles.module.css';
+import Link from 'next/link';
+import { motion, useTransform } from 'framer-motion';
+
+const index = () => {
+  const videoEl1 = useRef(null);
+
+  const attemptPlay = (videoEl) => {
+    videoEl &&
+      videoEl.current &&
+      videoEl.current.play().catch((error) => {
+        console.error('Error attempting to play', error);
+      });
+  };
+
+  useEffect(() => {
+    attemptPlay(videoEl1);
+  }, []);
+
+  return (
+    <div className={styles.landingv2}>
+      <div className={styles.bannerv2}>
+        <h1 className={styles.banner__contentv2}>
+          Orthodox Mission in the Heart of Toronto
+        </h1>
+      </div>
+      <div className={styles.landing_content_wrapperv2}>
+        <video
+          // playsInline
+          // loop
+          // muted
+          alt="All the devices"
+          src="/Landing_Placeholder.mp4"
+          ref={videoEl1}
+        />
+        <div className={styles.landing_contentv2}>
+          <p>We Teach, We Heal, We Bring the Light of Christ to All</p>
+          <div className={styles.landing_donatev2}>
+            <Link href="/donate">Donate</Link>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default index;

@@ -1,0 +1,41 @@
+.card {
+  height: 100vh;
+  position: sticky;
+  top: 20%;
+  background-color: var(--clean-white);
+}
+
+.card_content {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  height: fit-content;
+}
+
+.card h3 {
+  font-family: var(--font-playfair);
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.card_content p {
+  width: 50%;
+  font-family: var(--font-manrope);
+  font-size: 2.2rem;
+  text-wrap: pretty;
+  text-align: justify;
+}
+
+.image_container {
+  flex: 2;
+  position: relative;
+  display: block;
+  /* width: 24%; */
+  /* height: 30%; */
+}
+
+.img {
+  overflow: hidden;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+}

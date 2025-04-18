@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@studio-freight/react-lenis": "^0.0.47",
+    "client": "file:",
     "framer-motion": "^12.7.3",
     "next": "15.3.0",
     "next-view-transitions": "^0.3.4",

@@ -11,7 +11,7 @@ import Nav from './components/Nav/Nav';
 
 const playFair = Playfair_Display({
   variable: '--font-playfair',
-  weight: '400',
+  weight: ['400', '600', '700'],
   subsets: ['latin'],
 });
 

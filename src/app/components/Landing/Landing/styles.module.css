@@ -1,0 +1,45 @@
+.landingv2 {
+  height: 140vh;
+  margin-top: 80px;
+  background-color: var(--rouge);
+}
+
+.bannerv2 {
+  position: relative;
+  padding-top: 20px;
+  padding-left: 8%;
+  width: 80%;
+  z-index: 200;
+}
+
+.banner__contentv2 {
+  font-size: 10rem;
+  font-family: var(--font-playfair);
+  color: var(--white);
+  margin-bottom: -55px;
+}
+
+.landing_content_wrapperv2 {
+  position: relative;
+  z-index: 1;
+}
+
+.landing_contentv2 {
+  position: absolute;
+  z-index: 1;
+  padding-left: 8%;
+  bottom: 15%;
+
+  width: 45%;
+  font-size: 4rem;
+  font-family: var(--font-playfair);
+  color: var(--white);
+}
+
+.landing_donatev2 {
+  margin-top: 40px;
+  background-color: var(--rouge);
+  padding: 1rem;
+  width: fit-content;
+  color: var(--white);
+}

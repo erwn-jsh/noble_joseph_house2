@@ -3,6 +3,11 @@ import { useEffect, useRef } from 'react';
 import styles from './page.module.css';
 import Image from 'next/image';
 import { Link } from 'next-view-transitions';
+import { useScroll, useTransform } from 'framer-motion';
+import Landing from './components/Landing/Landing';
+import About from './components/Landing/About';
+import Serving from './components/Landing/Serving';
+import Donate from './components/Landing/Donate';
 
 export default function Home() {
   const videoEl1 = useRef(null);
@@ -19,8 +24,14 @@ export default function Home() {
     attemptPlay(videoEl1);
   }, []);
 
+  const container = useRef();
+  const { scrollYProgress } = useScroll({
+    target: container,
+    offset: ['start start', 'end end'],
+  });
+
   return (
-    <div className={styles.page}>
+    <div ref={container} className={styles.page}>
       {/* <div className={styles.landing}>
         <div className={styles.landing_content_wrapper}>
           <video
@@ -40,7 +51,7 @@ export default function Home() {
         </div>
       </div> */}
 
-      <div className={styles.landingv2}>
+      {/* <div className={styles.landingv2}>
         <div className={styles.bannerv2}>
           <h1 className={styles.banner__contentv2}>
             Orthodox Mission in the Heart of Toronto
@@ -62,9 +73,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className={styles.about}>
+      {/* <div className={styles.about}>
         <Image
           className={styles.about_logo}
           src="/Saints/Joseph_Red.png"
@@ -108,7 +119,14 @@ export default function Home() {
           voluptatem. Quo nobis non ad, debitis reiciendis adipisci ducimus iure
           officiis.
         </p>
-      </div>
+      </div> */}
+
+      <Landing scrollYProgress={scrollYProgress} />
+      <About scrollYProgress={scrollYProgress} />
+      <Serving />
+      <Donate />
+
+      {/* <motion.div style={{ scale }} className={styles.aboutv2}></motion.div> */}
     </div>
   );
 }
