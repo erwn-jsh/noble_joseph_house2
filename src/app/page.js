@@ -7,6 +7,7 @@ import { useScroll, useTransform } from 'framer-motion';
 import Landing from './components/Landing/Landing';
 import About from './components/Landing/About';
 import Serving from './components/Landing/Serving';
+import ServingV2 from './components/Landing/ServingV2';
 import Donate from './components/Landing/Donate';
 
 export default function Home() {
@@ -123,7 +124,8 @@ export default function Home() {
 
       <Landing scrollYProgress={scrollYProgress} />
       <About scrollYProgress={scrollYProgress} />
-      <Serving />
+      <ServingV2 />
+      {/* <Serving /> */}
       <Donate />
 
       {/* <motion.div style={{ scale }} className={styles.aboutv2}></motion.div> */}

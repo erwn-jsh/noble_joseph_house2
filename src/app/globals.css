@@ -15,6 +15,7 @@
   --dark-grey: #272218;
   --rouge: #581b14;
   --light-rouge: #e1b48a;
+  --test: #82281d;
   --gold: #ffd700;
   --green: #8bc34a;
   --white: #ffefc5;
@@ -136,9 +137,6 @@ h2 {
 .hidden {
   display: none;
 }
-
-
-
 
 /* fixing transition stacking order */
 ::view-transition-old(root),
