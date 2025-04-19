@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './styles.module.css';
+import Image from 'next/image';
 
 const index = () => {
   return (
@@ -7,6 +8,14 @@ const index = () => {
       <div className={styles.grid}>
         <div className={styles.item}>
           <h2>How We Serve</h2>
+          <div className={styles.logo_container}>
+            <Image
+              className={styles.about_logo}
+              src="/Saints/Joseph_Red.png"
+              width={350}
+              height={350}
+            />
+          </div>
         </div>
         <div className={styles.item}>
           <p className={styles.activity}>Meals</p>

@@ -1,4 +1,41 @@
 .donate {
   height: 100vh;
-  background-color: var(--light-rouge);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.call_to_action {
+  position: relative;
+  top: -5%;
+  text-align: center;
+  text-wrap: pretty;
+  width: 55%;
+}
+
+.cta {
+  font-family: var(--font-playfair);
+  font-size: 6rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.cta_support {
+  font-family: var(--font-manrope);
+  font-size: 2.5rem;
+  margin-bottom: 32px;
+  opacity: 0.8;
+}
+
+.link_wrapper {
+  font-family: var(--font-manrope);
+  font-size: 3rem;
+}
+
+.link_wrapper a{
+  font-family: var(--font-manrope);
+  font-size: 3rem;
+  border: solid var(--rouge);
+  padding: 0.5rem;
+  color: var(--rouge);
 }

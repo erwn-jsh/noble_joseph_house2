@@ -25,6 +25,11 @@
   line-height: 8rem;
 }
 
+.logo_container {
+  opacity: 0.1;
+  position: absolute;
+}
+
 .activity {
   font-family: var(--font-playfair);
   font-size: 3.5rem;
