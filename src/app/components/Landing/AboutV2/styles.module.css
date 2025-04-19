@@ -1,19 +1,42 @@
-.about {
+.about_wrapper {
   margin-top: 160px;
   margin-bottom: 160px;
   padding-left: 8%;
-  display: flex;
-  flex-direction: row;
-  gap: 5rem;
-  background-color: white;
+  padding-right: 8%;
   text-wrap: pretty;
+  text-align: justify;
   /* position: sticky;
   top: 0; */
+  overflow-x: hidden; /*be sure to double check on this*/
+}
+
+.intro {
+  margin-bottom: 60px;
+}
+
+.who {
+  width: 25%;
+  display: inline-block;
+  font-family: var(--font-playfair);
+  font-size: 2rem;
+  font-weight: 600;
+  vertical-align: 45%;
+}
+
+.lead {
+  display: inline;
+  font-family: var(--font-playfair);
+  font-size: 5rem;
+  line-height: 6rem;
 }
 
 .about_content {
   display: flex;
   flex-direction: row;
+}
+
+.about_text {
+  width: 35%;
 }
 
 .quote_container {
@@ -48,6 +71,16 @@
 }
 
 .about_image {
-  width: 75%;
-  height: 75%;
+  /* position: relative;
+  left: 5%;
+  object-fit: cover; */
+  /* width: 25%; */
+}
+
+.image_wrapper {
+  position: relative;
+  left: 8%;
+  width: 120%;
+  overflow-x: hidden;
+  border-radius: 25px;
 }

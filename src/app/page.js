@@ -6,6 +6,7 @@ import { Link } from 'next-view-transitions';
 import { useScroll, useTransform } from 'framer-motion';
 import Landing from './components/Landing/Landing';
 import About from './components/Landing/About';
+import AboutV2 from './components/Landing/AboutV2';
 import Serving from './components/Landing/Serving';
 import ServingV2 from './components/Landing/ServingV2';
 import Donate from './components/Landing/Donate';
@@ -123,7 +124,8 @@ export default function Home() {
       </div> */}
 
       <Landing scrollYProgress={scrollYProgress} />
-      <About scrollYProgress={scrollYProgress} />
+      {/* <About scrollYProgress={scrollYProgress} /> */}
+      <AboutV2 />
       <ServingV2 />
       {/* <Serving /> */}
       <Donate />
