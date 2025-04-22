@@ -6,7 +6,8 @@ const index = () => {
     <div className={styles.wrapper}>
       <span className={styles.why}>[ Our Raison d'être ]</span>
       <h2 className={styles.lead}>
-        Sure, but why build community? Because community changes everything.
+        Sure, but why start a hub? Because giving people community&nbsp;
+        <span className={styles.highlight}>changes everything.</span>
       </h2>
       <div className={styles.gallery_wrapper}>
         <ImageGallery />

@@ -26,6 +26,17 @@
   line-height: 6rem;
 }
 
+.highlight {
+  background-color: var(--white);
+  /* height: 25px; */
+  line-height: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+  display: inline-block;
+}
+
 .gallery_wrapper {
-  margin-top: 16px;
+  margin-top: 32px;
 }

@@ -2,6 +2,7 @@
   height: 140vh;
   margin-top: 80px;
   background-color: var(--rouge);
+  background-color: var(--test);
 }
 
 .bannerv2 {

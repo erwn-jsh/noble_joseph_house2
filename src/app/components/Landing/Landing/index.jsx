@@ -35,7 +35,7 @@ const index = () => {
           ref={videoEl1}
         />
         <div className={styles.landing_contentv2}>
-          <p>We Teach, We Heal, We Bring the Light of Christ to All</p>
+          <p>We Serve, We Heal, We Bring the Light of Christ to All</p>
           <div className={styles.landing_donatev2}>
             <Link href="/donate">Donate</Link>
           </div>

@@ -9,9 +9,11 @@ const index = () => {
         <div className={styles.who}>[ Who We Are ]</div>
         <h2 className={styles.lead}>
           Noble Joseph House is a volunteer-run community hub, bringing people
-          together through hospitality, connection, and celebration. Open every Monday, we offer a
-          vibrant space for individuals to gather, share moments, and build
-          meaningful relationships in Regent Park, Toronto.
+          together through hospitality, connection, and celebration. Open every{' '}
+          <span className={styles.highlight}>Monday</span>, we offer a vibrant
+          space for individuals to gather, share moments, and build
+          meaningful relationships in{' '}
+          <span className={styles.highlight}>Regent Park, Toronto.</span>
         </h2>
       </div>
 
