@@ -1,0 +1,62 @@
+.wrapper {
+  width: 100%;
+  /* border: solid 5px var(--black); */
+  border-radius: 25px;
+  position: relative;
+}
+
+.photo_container {
+  overflow-x: hidden;
+  border-radius: 25px;
+}
+
+.controls {
+  position: absolute;
+  height: 40px;
+  width: 100%;
+  top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.button {
+  border: none;
+  color: var(--black);
+  background-color: var(--clean-white);
+  font-family: var(--font-manrope);
+  font-size: 2rem;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.selected {
+  color: var(--clean-white);
+  background-color: var(--test);
+}
+
+.description_wrapper {
+  position: absolute;
+  background: var(--clean-white);
+  font-family: var(--font-manrope);
+
+  width: 25%;
+  top: 15%;
+  right: 12%;
+  border-radius: 25px;
+  padding: 2rem;
+  z-index: 300;
+}
+
+.description {
+  text-align: justify;
+  text-wrap: pretty;
+  font-size: 1.6rem;
+  opacity: 0.8;
+}

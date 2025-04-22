@@ -7,7 +7,7 @@ const index = () => {
     <div className={styles.donate}>
       <div className={styles.call_to_action}>
         <h2 className={styles.cta}>
-          Support our Community Hub with a gift today
+          Support us with a gift today
         </h2>
         <p className={styles.cta_support}>
           every contribution helps sustain and grow this vital space
@@ -15,7 +15,7 @@ const index = () => {
         </p>
         <div className={styles.link_wrapper}>
           <Link href="/donate">
-            <strong>Donate</strong>
+            <strong>Donate add icon</strong>
           </Link>
         </div>
       </div>

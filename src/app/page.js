@@ -9,7 +9,9 @@ import About from './components/Landing/About';
 import AboutV2 from './components/Landing/AboutV2';
 import Serving from './components/Landing/Serving';
 import ServingV2 from './components/Landing/ServingV2';
+import Why from './components/Landing/Why';
 import Donate from './components/Landing/Donate';
+import Footer from './components/Footer';
 
 export default function Home() {
   const videoEl1 = useRef(null);
@@ -127,8 +129,10 @@ export default function Home() {
       {/* <About scrollYProgress={scrollYProgress} /> */}
       <AboutV2 />
       <ServingV2 />
+      <Why />
       {/* <Serving /> */}
       <Donate />
+      <Footer />
 
       {/* <motion.div style={{ scale }} className={styles.aboutv2}></motion.div> */}
     </div>

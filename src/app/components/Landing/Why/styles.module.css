@@ -1,0 +1,31 @@
+.wrapper {
+  margin-top: 160px;
+  margin-bottom: 160px;
+  padding-left: 8%;
+  padding-right: 8%;
+  text-wrap: pretty;
+  text-align: justify;
+  /* position: sticky;
+  top: 0; */
+  overflow-x: hidden; /*be sure to double check on this*/
+}
+
+.why {
+  width: 25%;
+  display: inline-block;
+  font-family: var(--font-playfair);
+  font-size: 2rem;
+  font-weight: 600;
+  vertical-align: 45%;
+}
+
+.lead {
+  display: inline;
+  font-family: var(--font-playfair);
+  font-size: 5rem;
+  line-height: 6rem;
+}
+
+.gallery_wrapper {
+  margin-top: 16px;
+}

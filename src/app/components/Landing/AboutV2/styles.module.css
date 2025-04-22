@@ -58,14 +58,14 @@
 }
 
 .paragraph_one {
-  margin-top: 20px;
+  margin-top: 32px;
   font-family: var(--font-manrope);
   font-size: 2.2rem;
   font-weight: 600;
 }
 
 .paragraph_two {
-  margin-top: 20px;
+  margin-top: 32px;
   font-family: var(--font-manrope);
   font-size: 2.2rem;
 }

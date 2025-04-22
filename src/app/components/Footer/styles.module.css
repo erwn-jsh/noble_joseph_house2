@@ -1,0 +1,59 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--test);
+  padding: 2% 8%;
+}
+
+.footer_content {
+  padding-left: 8%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 8rem;
+}
+
+.logo_container {
+  width: 11%;
+}
+
+.index {
+  font-size: 2.2rem;
+  font-family: var(--font-playfair);
+  color: var(--white);
+  margin-bottom: 8px;
+}
+
+.links {
+  font-family: var(--font-manrope);
+  color: var(--clean-white);
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  font-size: 1.5rem;
+}
+
+.contact {
+  font-family: var(--font-manrope);
+  color: var(--clean-white);
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  font-size: 1.5rem;
+}
+
+.reach {
+  font-size: 2.2rem;
+  font-family: var(--font-playfair);
+  color: var(--white);
+}
+
+.copyright {
+  border-top: solid 1px var(--clean-white);
+  text-align: center;
+  font-family: var(--font-manrope);
+  color: var(--clean-white);
+  margin-top: 20px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}

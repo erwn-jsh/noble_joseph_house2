@@ -22,7 +22,9 @@
   font-family: var(--font-playfair);
   /* text-align: justify; */
   text-wrap: pretty;
-  line-height: 8rem;
+  /* line-height: 8rem; */
+  font-size: 5rem;
+  font-weight: 700;
 }
 
 .logo_container {
