@@ -14,15 +14,38 @@
   width: 55%;
 }
 
-.highlight {
+/* .highlight {
   background-color: var(--white);
-  /* height: 25px; */
+  height: 25px;
   line-height: 0.5rem;
   padding-top: 1rem;
   padding-bottom: 1.5rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   display: inline-block;
+} */
+
+.anim_highlight {
+  position: relative;
+  width: 0;
+}
+
+.anim_highlight::before {
+  content: '';
+  position: absolute;
+  margin: auto;
+  top: 28%;
+  left: -1rem;
+  width: 0%;
+  height: 50%;
+  background: var(--white);
+  z-index: -1;
+  transition: width 1s ease-in-out;
+}
+
+.active::before {
+  width: 100%;
+  padding-right: 1.5rem;
 }
 
 .cta {

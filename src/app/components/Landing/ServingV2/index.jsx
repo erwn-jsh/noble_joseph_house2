@@ -14,6 +14,7 @@ const index = () => {
               src="/Saints/Joseph_Red.png"
               width={350}
               height={350}
+              alt='placeholder'
             />
           </div>
         </div>

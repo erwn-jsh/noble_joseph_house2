@@ -24,6 +24,7 @@ const index = ({ service, description, src, i }) => {
             layout="responsive"
             height={500}
             width={500}
+            alt="placeholder"
           />
         </div>
       </div>
