@@ -1,8 +1,15 @@
-import React from 'react';
+'use client';
+import React, { useEffect } from 'react';
 import styles from './styles.module.css';
 import Image from 'next/image';
+import { useAnimate, useInView } from 'framer-motion';
 
 const index = () => {
+  const [scope, animate] = useAnimate();
+  const isInView = useInView(scope);
+
+  useEffect(() => {}, [isInView]);
+
   return (
     <div className={styles.about_wrapper}>
       <div className={styles.intro}>
@@ -10,10 +17,24 @@ const index = () => {
         <h2 className={styles.lead}>
           Noble Joseph House is a volunteer-run community hub, bringing people
           together through hospitality, connection, and celebration. Open every{' '}
-          <span className={styles.highlight}>Monday</span>, we offer a vibrant
-          space for individuals to gather, share moments, and build
-          meaningful relationships in{' '}
-          <span className={styles.highlight}>Regent Park, Toronto.</span>
+          <span
+            ref={scope}
+            className={`${styles.anim_highlight} ${
+              isInView ? styles.active : ''
+            }`}
+          >
+            Monday
+          </span>
+          , we offer a vibrant space for individuals to gather, share moments,
+          and build meaningful relationships in{' '}
+          <span
+            ref={scope}
+            className={`${styles.anim_highlight} ${
+              isInView ? styles.active : ''
+            }`}
+          >
+            Regent Park, Toronto.
+          </span>
         </h2>
       </div>
 

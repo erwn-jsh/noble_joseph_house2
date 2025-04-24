@@ -4,6 +4,7 @@ import styles from './page.module.css';
 import Image from 'next/image';
 import { Link } from 'next-view-transitions';
 import { useScroll, useTransform } from 'framer-motion';
+import ReactLenis from '@studio-freight/react-lenis';
 import Landing from './components/Landing/Landing';
 import About from './components/Landing/About';
 import AboutV2 from './components/Landing/AboutV2';
@@ -35,8 +36,9 @@ export default function Home() {
   });
 
   return (
-    <div ref={container} className={styles.page}>
-      {/* <div className={styles.landing}>
+    <ReactLenis root>
+      <div ref={container} className={styles.page}>
+        {/* <div className={styles.landing}>
         <div className={styles.landing_content_wrapper}>
           <video
             playsInline
@@ -55,7 +57,7 @@ export default function Home() {
         </div>
       </div> */}
 
-      {/* <div className={styles.landingv2}>
+        {/* <div className={styles.landingv2}>
         <div className={styles.bannerv2}>
           <h1 className={styles.banner__contentv2}>
             Orthodox Mission in the Heart of Toronto
@@ -79,7 +81,7 @@ export default function Home() {
         </div>
       </div> */}
 
-      {/* <div className={styles.about}>
+        {/* <div className={styles.about}>
         <Image
           className={styles.about_logo}
           src="/Saints/Joseph_Red.png"
@@ -125,16 +127,17 @@ export default function Home() {
         </p>
       </div> */}
 
-      <Landing scrollYProgress={scrollYProgress} />
-      {/* <About scrollYProgress={scrollYProgress} /> */}
-      <AboutV2 />
-      <ServingV2 />
-      <Why />
-      {/* <Serving /> */}
-      <Donate />
-      <Footer />
+        <Landing scrollYProgress={scrollYProgress} />
+        {/* <About scrollYProgress={scrollYProgress} /> */}
+        <AboutV2 />
+        <ServingV2 />
+        <Why />
+        {/* <Serving /> */}
+        <Donate />
+        <Footer />
 
-      {/* <motion.div style={{ scale }} className={styles.aboutv2}></motion.div> */}
-    </div>
+        {/* <motion.div style={{ scale }} className={styles.aboutv2}></motion.div> */}
+      </div>
+    </ReactLenis>
   );
 }
