@@ -1,0 +1,17 @@
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 99vw;
+  background-color: var(--test);
+  z-index: 999;
+  /* overflow-x: hidden; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image_container {
+  width: 20%;
+}

@@ -14,6 +14,10 @@ import Why from './components/Landing/Why';
 import Donate from './components/Landing/Donate';
 import Footer from './components/Footer';
 
+import LandingV2 from './components/Landing/LandingV2';
+import AboutV3 from './components/Landing/AboutV3';
+import ServingV3 from './components/Landing/ServingV3'
+
 export default function Home() {
   const videoEl1 = useRef(null);
 
@@ -127,10 +131,18 @@ export default function Home() {
         </p>
       </div> */}
 
-        <Landing scrollYProgress={scrollYProgress} />
+        {/* <Landing scrollYProgress={scrollYProgress} /> */}
         {/* <About scrollYProgress={scrollYProgress} /> */}
+        {/* <AboutV2 />
+        <ServingV2 /> */}
+        {/* <Landing scrollYProgress={scrollYProgress} />
         <AboutV2 />
-        <ServingV2 />
+        <ServingV2 /> */}
+
+        <LandingV2 />
+        <AboutV3 />
+        <ServingV3/>
+        
         <Why />
         {/* <Serving /> */}
         <Donate />

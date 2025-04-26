@@ -1,0 +1,41 @@
+.container {
+  margin-top: 80px;
+  height: 100vh;
+  width: 100vh;
+  /* position: relative; */
+}
+
+.video_wrapper video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+}
+
+.hero_content {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.lead_text {
+  font-size: 8rem;
+  color: var(--dark-gray);
+  font-family: var(--font-playfair);
+}
+
+.donate {
+  background-color: var(--test);
+  padding: 1rem;
+  color: var(--white);
+  width: fit-content;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: var(--font-manrope);
+  font-size: 4rem;
+  border-radius: 25px;
+}

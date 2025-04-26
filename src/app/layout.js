@@ -8,6 +8,7 @@ import {
 import './globals.css';
 import { ViewTransitions } from 'next-view-transitions';
 import Nav from './components/Nav/Nav';
+import Preloader from './components/Preloader';
 
 const playFair = Playfair_Display({
   variable: '--font-playfair',
@@ -56,6 +57,7 @@ export default function RootLayout({ children }) {
           ${manrope.variable} 
           ${playFair.variable} `}
         >
+          {/* <Preloader/> */}
           <Nav />
           {children}
         </body>
