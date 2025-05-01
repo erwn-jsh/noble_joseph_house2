@@ -13,7 +13,7 @@ const index = () => {
     <div className={styles.wrapper}>
       <span className={styles.why}>[ Why does it matter? ]</span>
       <h2 className={styles.lead}>
-        Sure, but why start a hub? Because giving people community&nbsp;
+        Sure, but why run a hub? Because giving people community&nbsp;
         <span
           ref={scope}
           className={`${styles.anim_highlight} ${

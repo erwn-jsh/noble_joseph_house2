@@ -61,9 +61,9 @@ const index = () => {
       </div>
       <div className={styles.landing_content_wrapperv2}>
         <video
-          // playsInline
-          // loop
-          // muted
+          playsInline
+          loop
+          muted
           alt="All the devices"
           src="/Landing_Placeholder.mp4"
           ref={videoEl1}
